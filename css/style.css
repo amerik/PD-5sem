@@ -1,0 +1,239 @@
+body
+{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.container
+{
+	margin:0;
+	padding: 0;
+}
+.main-header
+{
+	background-color: #0279ff;
+	width: 100%;
+	height: 100px;
+}
+.modal-header h3
+{
+
+	margin-right: 30px;
+}
+.btn:hover
+{
+  cursor: pointer;
+}
+.btn-primary
+{
+	background-color: #8e58a3;
+	margin-top: 30px;
+}
+.btn-primary:hover
+{
+  cursor: pointer;
+}
+.header h1
+{
+	text-align: center;
+	color: white;
+	padding-right: 30px;
+	margin-top: 20px;
+}
+
+.menu
+{
+	display:block;
+	width: 100%;
+	height: 450px;
+	background-color: #0279ff;
+}
+
+.menu a
+{
+	display: block;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	color: black;
+	background-color: #dddddd;
+  font-weight: bold;
+}
+.menu a:hover
+{
+	background-color: #8e58a3;
+	text-decoration:none;
+}
+.group
+{
+	margin-top:10px;
+}
+.photo
+{
+	display: block;
+	margin-top:10px;
+	width: 100%;
+	height:324px;
+	background: url('../img/prepod.jpg') no-repeat;
+}
+.info
+{
+	display: block;
+	border: 3px solid black;
+	width: 100%;
+	height: 400px;
+}
+.info p
+{
+	font-size: 18px;
+	padding: 5px 15px;
+}
+.about
+{
+	font-size: 12px;
+}
+#hidden-content h2
+{
+	text-align: center;
+}
+.E-mail_form input
+{
+    height:40px;
+    width:220px;
+    margin:5px 8px;
+}
+#submit_button
+{
+  margin-left: 136px;
+  background-color: 
+   border: none;
+    color: white;
+    background: rgb(0,100, 250);
+}
+#submit_button:hover
+{
+  cursor: pointer;
+  background-color: #8e58a3;
+}
+.E-mail_form textarea
+{
+  width:300px;
+  margin-left: 8px;
+}
+.E-mail_form label
+{
+ width:100px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+#table
+{
+  width: 100%;
+ margin:10px;
+ border: 3px solid black;
+ border-collapse:collapse;
+  border-spacing: 7px 11px;
+  text-align: center;
+}
+h3
+{
+  text-align: center;
+}
+
+#table th {border: 1px solid grey;width: 100px;}
+#table td {border: 1px solid grey; height: 40px;}
+
+animated-modal {
+  max-width: 550px;
+  border-radius: 4px;
+  overflow: hidden;
+  
+  transform: translateY(-50px);
+  transition: all .7s;
+}
+
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    background: rgb(0,100, 250);
+
+}
+.E-mail:hover
+{
+  cursor: pointer;
+  background-color: #8e58a3;
+}
+.closeBtn{
+	float: right;
+  cursor: pointer;
+  font-size:20px;
+  color: white;
+}
+
+.modal {
+    background: rgba(0,0,0, 0.2);
+    display: none;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    perspective: 500px;
+    
+}
+
+.modal .modal-wrapper {
+    width: 50%;
+    max-width: 500px;
+    top: 15%;
+    background: rgb(0,100, 250);
+    position: absolute;
+    text-align: left;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.4);
+    animation-name:modalopen;
+    animation-duration:.8s;
+    transform: rotateX(0deg);
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 5px 15px;
+}
+
+.modal-header, .modal-footer {
+    text-align: center;
+    color: white;
+}
+
+.modal-body {
+    background: white;
+}
+
+@keyframes modalopen{
+  from {
+    opacity: 0; 
+    top: 5%;
+    transform: rotateX(15deg);
+   }
+  to {
+    opacity: 1; 
+    top: 15%; 
+    transform: rotateX(0deg);
+    }
+}

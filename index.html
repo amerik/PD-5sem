@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Личный кабинет преподователя</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="main-header">
+	    	<div class="container">	
+	    		<div class="row">
+	    			<div class="col-lg-11">
+	    				<h1> Личный кабинет преподователя</h1>
+	    			</div>
+	    			<div class="col-lg-1">
+	    				<p class="mb-0">
+          <a data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;" class="btn btn-primary">Выйти</a>
+        </p>
+
+        <div style="display: none;max-width:600px;" id="trueModal">
+          <h2>Вы действительно хотите выйти?</h2>
+          <button  class="btn">Да</button>
+          <button data-fancybox-close class="btn">Нет</button>
+        </div>
+	    			
+	    		</div>
+	    	</div>
+		</div>
+	</header>
+	<section id="profile" class="profile">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<div class="menu">
+						<a href="#">Мой профиль</a>
+						<p><a href="#" class="group">Мои группы</a></p>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<span class="photo"></span>
+					<br>
+					<p>E-mail:
+					pd_fit@mail.ru</p>
+					<button class="E-mail">Отправить сообщение</button>
+<div class="modal">
+  <div class="modal-wrapper">
+    <div class="modal-header">
+      <span class="closeBtn">&times;</span>
+      <h3>Сообщение преподователю</h3>
+    </div>
+    <div class="modal-body">
+     <form class="E-mail_form" action="send.php" method="post">
+<label for="first_name">Ваше имя:</label>
+ <input type="text" name="first_name"><br>
+ <label for="email">Email:</label>
+ <input  type="text" name="email" required placeholder="Обязательное поле"><br>
+ <label for="message">Сообщение:</label>
+<br><textarea rows="5" name="message" cols="30"></textarea><br>
+<input type="submit" id="submit_button" name="submit" value="Отправить">
+</form>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+				</div>
+				<div class="col-lg-7">
+					<h2>Даньшина Марина Владимировна</h2>
+					<span class="info">
+						<p>Должность: Зам.Декана</p>
+						<p>Образование: Высшее</p>
+						<p>Конференции: АИС,WorldSkilss, 
+PiterPy Breakfast <a data-fancybox data-src="#hidden-content" href="javascript:;" class="about">
+	Показать подробнее
+</a></p>
+						<div style="display: none;" id="hidden-content">
+	<h2>Конференции</h2>
+	<p><strong>Название:</strong>AIC,WorldSkilss</p>
+	<p><strong>Достижения:</strong>1adasdad</p>
+</div>
+			<p>Дисциплины: дисциплины которые ведет преподаватель</p>
+			<p>Ссылки на научные аккаунты:  <a data-fancybox data-type="iframe" data-src="http://mospolytech.ru" href="javascript:;">
+    Московский политех
+  </a>
+</p>
+  <p>Технологии: <a href="#">#c++</a> <a href="#">#html\css</a>
+   <a href="#">#php</a></p>
+   <p>Соц сети: <a href="https://vk.com/mdanshina">VK</a> , <a href="https://www.facebook.com/marina.danshina">Facebook</a></p>
+							</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2"><div class="menu"></div></div>
+			<div class="col-lg-10">
+				<br>
+					<h3>Расписание</h3>
+					<table id="table">
+  <thead>
+    <tr>
+      <th>Время</th>
+      <th>Понедельник</th>
+      <th>Вторник</th>
+      <th>Среда</th>
+      <th>Четверг</th>
+      <th>Пятница</th>
+      <th>Суббота</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9:00-10:30</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+    <tr>
+       <td>10:40-12:10</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+      <tr>
+       <td>12:20-13:50</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+      <tr>
+       <td>14:30-16:00</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+      <tr>
+       <td>16:10-17:40</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+      <tr>
+       <td>17:50-19:20</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+      <tr>
+       <td>19:30-21:00</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+    </tr>
+  </tbody>
+</table>
+			</div>
+		</div>
+	</section>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+	</script>
+	<script src="fancybox/dist/jquery.fancybox.js"></script>
+</body>
+</html>
